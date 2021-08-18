@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AccordionModule } from 'primeng/accordion'; // accordion and accordion tab          // api
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 
 
@@ -17,6 +18,7 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     AccordionModule,
+    TableModule,
     InputTextModule,
 
     ButtonModule
