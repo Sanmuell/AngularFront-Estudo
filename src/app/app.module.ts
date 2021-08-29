@@ -14,11 +14,13 @@ import { ButtonModule } from 'primeng/button';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 
 
+
 import {CalendarModule} from 'primeng/calendar';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { SelectButtonModule } from 'primeng/selectbutton';
 
 
 
@@ -44,7 +46,9 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     TooltipModule,
     InputTextareaModule,
     CalendarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SelectButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
