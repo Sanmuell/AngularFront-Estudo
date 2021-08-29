@@ -22,6 +22,7 @@ import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.co
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
+import { NgxCurrencyModule } from 'ngx-currency';
 
 
 
@@ -49,7 +50,9 @@ import { DropdownModule } from 'primeng/dropdown';
     CalendarModule,
     BrowserAnimationsModule,
     SelectButtonModule,
-    DropdownModule
+    DropdownModule,
+    NgxCurrencyModule
+
 
   ],
   providers: [],
