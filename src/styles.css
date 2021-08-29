@@ -13,4 +13,18 @@ label {
         width: 1170px;
         margin: 0 auto;
     }
+
+a {
+color:#337ab7;
+
+}
+
+a:hover, a:focus {
+text-decoration: underline;
+}
+
+label {
+    font-family: bold;
+}
+
 }
