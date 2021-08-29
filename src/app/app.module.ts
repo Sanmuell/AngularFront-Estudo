@@ -8,8 +8,12 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
 import { ButtonModule } from 'primeng/button';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 
 
 
@@ -18,7 +22,9 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     LancamentosPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    PessoasPesquisaComponent,
+    LancamentoCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     TableModule,
     ButtonModule,
     InputTextModule,
-    TooltipModule
+    TooltipModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
