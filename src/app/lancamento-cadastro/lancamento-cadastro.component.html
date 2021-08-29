@@ -30,11 +30,11 @@
     </div>
     <div class="col-12 md:col-6 p-fluid">
         <label>Categoria</label><br>
-        <input pInputText type="text" type="text" class="inputfield w-full"  >
+        <p-dropdown [options]="categorias" placeholder="Selecione" #categoria ></p-dropdown>
     </div>
     <div class="col-12 md:col-6 p-fluid">
         <label>Pessoa</label><br>
-        <input pInputText type="text" type="text" class="inputfield w-full" >
+       <p-dropdown [options]="pessoas" placeholder="Selecione" #pessoa [filter]="true" ></p-dropdown>
     </div>
     <div class="col-12 p-fluid">
         <label>Observação</label><br>
