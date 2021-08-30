@@ -26,6 +26,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
 import { NgxCurrencyModule } from 'ngx-currency';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -58,7 +59,8 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
     SelectButtonModule,
     DropdownModule,
     NgxCurrencyModule,
-    InputMaskModule
+    InputMaskModule, 
+    FormsModule
 
 
   ],

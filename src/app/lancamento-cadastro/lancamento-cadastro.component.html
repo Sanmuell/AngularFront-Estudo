@@ -21,13 +21,26 @@
         [showIcon]="false"></p-calendar>
     </div>
     <div class="col-12 md:col-9 p-fluid">
-        <label>Descrição</label><br>
-        <input pInputText type="text" type="text" class="inputfield w-full" >
+        <label>Descrição {{ descricao.errors | json }}</label><br>
+        <input pInputText type="text" name="descricao" 
+            ngModel #descricao="ngModel" required minlength="5"
+             class="inputfield w-full" >
+        <div  *ngIf= "descricao.hasError('required') && descricao.dirty" 
+        class="p-message  p-message-error">
+            Informe a descrição
+        </div>
+        <div  *ngIf= "descricao.hasError('minlength') &&  descricao.dirty"
+            class="p-message  p-message-error">
+           Mínimo de {{ descricao.errors?.minlength?.requiredLength }} caracteres. 
+        Você digitou apenas {{ descricao.errors?.minlength?.actualLength }}
+        </div>
+
     </div>
     <div class="col-12 md:col-3 p-fluid">
         <label>Valor</label><br>
         <input pInputText type="text" type="text"  placeholder="0,00" currencyMask
- [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false }">
+ [options]="{ prefix: '', thousands: '.', decimal: ',', allowNegative: false }" 
+    ngModel>
 
     </div>
     <div class="col-12 md:col-6 p-fluid">
