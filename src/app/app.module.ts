@@ -27,6 +27,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { NgxCurrencyModule } from 'ngx-currency';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { FormsModule } from '@angular/forms';
+import { MessageComponent } from './message/message.component';
 
 
 
@@ -39,7 +40,8 @@ import { FormsModule } from '@angular/forms';
     PessoasPesquisaComponent,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    PessoaCadastroComponent
+    PessoaCadastroComponent,
+    MessageComponent
 
 
   ],

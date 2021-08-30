@@ -21,14 +21,15 @@
         [showIcon]="false"></p-calendar>
     </div>
     <div class="col-12 md:col-9 p-fluid">
-        <label>Descrição {{ descricao.errors | json }}</label><br>
+        <label>Descrição {{ descricao.errors }}</label><br>
         <input pInputText type="text" name="descricao" 
             ngModel #descricao="ngModel" required minlength="5"
              class="inputfield w-full" >
-        <div  *ngIf= "descricao.hasError('required') && descricao.dirty" 
-        class="p-message  p-message-error">
-            Informe a descrição
-        </div>
+
+            <app-message [control] = "descricao.control" error="required"
+            text="Informe a descricao"></app-message>
+
+       
         <div  *ngIf= "descricao.hasError('minlength') &&  descricao.dirty"
             class="p-message  p-message-error">
            Mínimo de {{ descricao.errors?.minlength?.requiredLength }} caracteres. 
