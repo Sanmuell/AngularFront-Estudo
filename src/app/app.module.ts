@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 
+
 import { AccordionModule } from 'primeng/accordion'; 
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
 import { ButtonModule } from 'primeng/button';
 import {InputTextareaModule} from 'primeng/inputtextarea';
+import {InputMaskModule} from 'primeng/inputmask';
 
 
 
@@ -23,6 +25,7 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
 import { NgxCurrencyModule } from 'ngx-currency';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 
 
 
@@ -33,7 +36,10 @@ import { NgxCurrencyModule } from 'ngx-currency';
     LancamentosPesquisaComponent,
     NavbarComponent,
     PessoasPesquisaComponent,
-    LancamentoCadastroComponent
+    LancamentoCadastroComponent,
+    PessoaCadastroComponent,
+    PessoaCadastroComponent
+
 
   ],
 
@@ -51,7 +57,8 @@ import { NgxCurrencyModule } from 'ngx-currency';
     BrowserAnimationsModule,
     SelectButtonModule,
     DropdownModule,
-    NgxCurrencyModule
+    NgxCurrencyModule,
+    InputMaskModule
 
 
   ],
