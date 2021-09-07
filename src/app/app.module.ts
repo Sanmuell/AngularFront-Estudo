@@ -1,3 +1,4 @@
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule} from '@angular/core';
 
@@ -18,16 +19,18 @@ import {InputMaskModule} from 'primeng/inputmask';
 
 
 import {CalendarModule} from 'primeng/calendar';
-import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { PessoasPesquisaComponent } from './pessoas/pessoas-pesquisa/pessoas-pesquisa.component';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
 import { NgxCurrencyModule } from 'ngx-currency';
-import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { PessoaCadastroComponent } from './pessoas/pessoa-cadastro/pessoa-cadastro.component';
 import { FormsModule } from '@angular/forms';
-import { MessageComponent } from './message/message.component';
+import { LancamentosGridComponent } from './lancamentos/lancamentos-grid/lancamentos-grid.component';
+import { LancamentoCadastroComponent } from './lancamentos/lancamento-cadastro/lancamento-cadastro.component';
+import { LancamentosPesquisaComponent } from './lancamentos/lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { PessoasGridComponent } from './pessoas/pessoas-grid/pessoas-grid.component';
+
 
 
 
@@ -35,13 +38,13 @@ import { MessageComponent } from './message/message.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LancamentosPesquisaComponent,
     NavbarComponent,
     PessoasPesquisaComponent,
+    PessoaCadastroComponent,
+    LancamentosGridComponent,
+    LancamentosPesquisaComponent,
     LancamentoCadastroComponent,
-    PessoaCadastroComponent,
-    PessoaCadastroComponent,
-    MessageComponent
+    PessoasGridComponent
 
 
   ],
