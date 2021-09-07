@@ -3,9 +3,6 @@ import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './../app-routing.module';
-import { PessoaCadastroComponent } from './../pessoa-cadastro/pessoa-cadastro.component';
-import { PessoasGridComponent } from './../pessoas-grid/pessoas-grid.component';
-import { PessoasPesquisaComponent } from './../pessoas-pesquisa/pessoas-pesquisa.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,10 +15,15 @@ import { CalendarModule } from 'primeng/calendar';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { NgxCurrencyModule } from 'ngx-currency';
 import { FormsModule } from '@angular/forms';
+import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
+
   declarations: [
   PessoasPesquisaComponent,
   PessoasGridComponent,
@@ -30,6 +32,7 @@ import { FormsModule } from '@angular/forms';
   ],
 
 exports:[
+
    PessoaCadastroComponent,
    PessoasPesquisaComponent
 
@@ -52,7 +55,10 @@ exports:[
     DropdownModule,
     NgxCurrencyModule,
     InputMaskModule, 
-    FormsModule
+    FormsModule,
+
+    SharedModule
+
   ]
 })
 export class PessoasModule { }

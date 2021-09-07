@@ -26,8 +26,8 @@
             ngModel #descricao="ngModel" required minlength="5"
              class="inputfield w-full" >
 
-           <!-- <app-message [control] = "descricao.control" error="required"
-            text="Informe a descricao"></app-message> -->
+           <app-message [control] = "descricao.control" error="required"
+            text="Informe a descricao"></app-message>
 
        
         <div  *ngIf= "descricao.hasError('minlength') &&  descricao.dirty"
